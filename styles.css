@@ -10,41 +10,24 @@ body {
     color: white; /* Makes text stand out on the background */
 }
 
-/* Additional Styling for Sections */
+/* General Styling for Sections (Transparent Backgrounds) */
 .hero, .services, .about, .contact, footer {
-    background: rgba(0, 0, 0, 0.5); /* Optional: Slight overlay to improve text visibility */
+    background: transparent; /* Removes any box background */
     padding: 20px;
-    border-radius: 8px;
     margin: 20px;
+    border-radius: 0; /* Removes any rounding */
 }
 
-/* Existing styles for specific elements follow here... *//* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 40px;
-    background-color: #f0f8ff;
-}
-
+/* Hero Section Image Sizing */
 .hero-image {
     max-width: 100%;
     height: auto;
 }
 
-/* Services Section */
+/* Styling for Service Sections */
 .services {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #ffffff;
 }
 
 .service {
@@ -65,7 +48,7 @@ body {
 
 .service p {
     font-size: 0.9em;
-    color: #555;
+    color: #ccc; /* Lighter text color for contrast */
 }
 
 .learn-more-btn {
@@ -73,7 +56,7 @@ body {
     margin-top: 10px;
     padding: 10px 20px;
     background-color: #0056b3;
-    color: #fff;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -85,26 +68,24 @@ body {
 /* About Section */
 .about {
     text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9;
 }
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    padding: 20px;
-    background-color: #e8f0fe;
-}
-
+/* Contact Section Icons */
 .contact img {
     width: 40px;
     height: auto;
     margin: 0 10px;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #222;
+    background: transparent;
     color: #fff;
+}
+
+/* Text Shadow for Readability */
+h1, h2, p, a {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
