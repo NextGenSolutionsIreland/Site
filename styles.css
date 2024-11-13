@@ -1,4 +1,24 @@
-/* General Styles */
+/* Full-Page Background Image */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("icons/icon1.png"); /* Path to your hero image */
+    background-size: cover; /* Scale image to cover the whole screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat;
+    color: white; /* Makes text stand out on the background */
+}
+
+/* Additional Styling for Sections */
+.hero, .services, .about, .contact, footer {
+    background: rgba(0, 0, 0, 0.5); /* Optional: Slight overlay to improve text visibility */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Existing styles for specific elements follow here... *//* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
