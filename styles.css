@@ -1,33 +1,37 @@
-/* Full-Page Background Image */
+/* Background Image with Adjusted Sizing */
+html {
+    height: 100%;
+    background-image: url("icons/icon1.png"); /* Path to your hero image */
+    background-size: 100% auto; /* Adjusts the width of the image to fit screen */
+    background-position: center top; /* Positions the background at the top */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+}
+
 body {
     margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
-    background-image: url("icons/icon1.png"); /* Path to your hero image */
-    background-size: cover; /* Scale image to cover the whole screen */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
-    background-repeat: no-repeat;
-    color: white; /* Makes text stand out on the background */
+    color: white;
 }
 
-/* General Styling for Sections (Transparent Backgrounds) */
-.hero, .services, .about, .contact, footer {
-    background: transparent; /* Removes any box background */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 0; /* Removes any rounding */
+/* Hero Text with Enhanced Shadow */
+.hero-text h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 40vh; /* Adjust for vertical centering */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for readability */
+    color: #ffffff;
 }
 
-/* Hero Section Image Sizing */
-.hero-image {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Styling for Service Sections */
+/* Service Section Layout and Icon Placement */
 .services {
     display: flex;
     justify-content: space-around;
+    padding: 30px;
 }
 
 .service {
@@ -36,25 +40,26 @@ body {
 }
 
 .service img {
-    width: 80px;
+    width: 60px; /* Smaller icons */
     height: auto;
     margin-bottom: 15px;
 }
 
 .service h3 {
-    margin: 10px 0;
     font-size: 1.2em;
+    margin: 10px 0;
 }
 
 .service p {
     font-size: 0.9em;
-    color: #ccc; /* Lighter text color for contrast */
+    color: #ddd;
 }
 
+/* Adjust Button */
 .learn-more-btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 8px 15px;
     background-color: #0056b3;
     color: white;
     text-decoration: none;
@@ -65,27 +70,17 @@ body {
     background-color: #003d80;
 }
 
-/* About Section */
-.about {
-    text-align: center;
+/* Additional Padding for Sections */
+.hero, .about, .contact, footer {
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
 }
 
-/* Contact Section Icons */
-.contact img {
-    width: 40px;
-    height: auto;
-    margin: 0 10px;
-}
-
-/* Footer */
+/* Enhanced Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
     background: transparent;
     color: #fff;
-}
-
-/* Text Shadow for Readability */
-h1, h2, p, a {
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
