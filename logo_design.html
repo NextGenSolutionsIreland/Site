@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Design Gallery - NextGen Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Logo Design Gallery</h1>
+        <p>Explore our portfolio of custom logo designs created for our clients.</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <!-- 30 logo images -->
+        <div class="gallery-item"><img src="logos/logo1.png" alt="Logo 1"></div>
+        <div class="gallery-item"><img src="logos/logo2.png" alt="Logo 2"></div>
+        <div class="gallery-item"><img src="logos/logo3.png" alt="Logo 3"></div>
+        <!-- Repeat for logos up to logo30.png -->
+    </section>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        <button class="page-btn" onclick="showPage(1)">1</button>
+        <button class="page-btn" onclick="showPage(2)">2</button>
+        <button class="page-btn" onclick="showPage(3)">3</button>
+    </div>
+
+    <!-- Lightbox for Expanded View -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Expanded Logo">
+        <div class="nav">
+            <span class="prev" onclick="showPrev()">&lt;</span>
+            <span class="next" onclick="showNext()">&gt;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
