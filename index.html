@@ -1,57 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextGen Solutions Portfolio</title>
+    <title>NextGen Solutions - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>NextGen Solutions Portfolio</h1>
-        <p>Your trusted partner for digital branding and content creation.</p>
-    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="icons/icon1.png" alt="NextGen Solutions" class="hero-image">
+    </section>
 
-    <main>
-        <section id="logo-branding">
-            <h2>Logo & Branding</h2>
-            <div class="slideshow-container">
-                <div class="slide fade">
-                    <img src="logo_and_branding/logo1.png" alt="Branding Design 1">
-                </div>
-                <div class="slide fade">
-                    <img src="logo_and_branding/logo2.png" alt="Branding Design 2">
-                </div>
-                <div class="slide fade">
-                    <img src="logo_and_branding/logo3.png" alt="Branding Design 3">
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <div class="dots-container">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </section>
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service">
+            <img src="icons/icon2.png" alt="Video Production Icon">
+            <h3>Video Production</h3>
+            <p>We create impactful videos that engage and captivate your audience.</p>
+            <a href="video_production.html" class="learn-more-btn">Learn More</a>
+        </div>
+        <div class="service">
+            <img src="icons/icon3.png" alt="Logo Design Icon">
+            <h3>Logo Design</h3>
+            <p>Designing memorable logos that represent your brand identity.</p>
+            <a href="logo_design.html" class="learn-more-btn">Learn More</a>
+        </div>
+        <div class="service">
+            <img src="icons/icon4.png" alt="Social Media Management Icon">
+            <h3>Social Media Management</h3>
+            <p>Managing your social channels to boost engagement and reach.</p>
+            <a href="social_media.html" class="learn-more-btn">Learn More</a>
+        </div>
+    </section>
 
-        <section id="video">
-            <h2>Video</h2>
-            <p>Explore our video content that helps elevate brands.</p>
-            <div class="video-container">
-                <video controls>
-                    <source src="video/demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About NextGen Solutions</h2>
+        <p>NextGen Solutions is your partner in driving business growth online. We specialize in creating impactful videos, designing memorable logos, and managing social media channels to enhance your brand’s visibility and engagement.</p>
+        <a href="about_us.html" class="learn-more-btn">Learn More</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Connect With Us</h2>
+        <a href="https://www.facebook.com/NextGenSolutionsIreland" target="_blank">
+            <img src="icons/icon5.png" alt="Facebook Icon">
+        </a>
+        <a href="https://www.instagram.com/NextGenSolutionsIreland" target="_blank">
+            <img src="icons/icon6.png" alt="Instagram Icon">
+        </a>
+        <a href="contact_us.html">
+            <img src="icons/icon7.png" alt="Contact Us Icon">
+        </a>
+    </section>
 
     <footer>
-        <p>&copy; 2024 NextGen Solutions. All rights reserved.</p>
+        <p>&copy; 2024 NextGen Solutions</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
